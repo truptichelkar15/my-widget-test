@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Test Widget</title>
-  </head>
-  <body>
-    <h2>This is my test widget</h2>
-    <button onclick="alert('Widget clicked!')">Click Me</button>
+<head>
+    <title>Widget at Bottom of Page</title>
+    <style>
+     body {
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+     }
 
-    <script src="https://cdnb.propel.ly/widget.js" company-id="DP4Gq6dk" widget-id="wXz1dgna"></script>
-    <div class="6XKnJVpx-wXz1dgna"></div>
-  </body>
+     .content {
+        height: 1500px; /* Just to make the page scroll */
+        padding: 20px;
+     }
+
+     .widget-container {
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-top: 2px solid #ccc;
+     }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+     <h1>Scroll down to see the widget</h1>
+     <p>This space is just filler to make the page scrollable...</p>
+    </div>
+
+    <!-- ✅ Widget at end of the content -->
+    <div class="widget-container">
+     <script
+        src="https://cdnb.propel.ly/widget.js"
+        company-id="DP4Gq6dk"
+        widget-id="wXz1dgna"
+     ></script>
+     <div class="6XKnJVpx-wXz1dgna"></div>
+    </div>
+
+</body>
 </html>
